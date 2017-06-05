@@ -1,0 +1,21 @@
+.ham-div{
+	height:50px;
+	width:50px;
+	border-radius:10%;
+	border:3px solid black;
+	background-color:#4da9ff;
+	position:absolute;
+	left:50px;
+	top:0px;
+}
+.ham-line{
+	height:12%;
+	margin-top:16%;
+	width:80%;
+	margin-left: 10%;
+	border-radius:5px;
+	background-color:white;
+}
+.ham-div:hover{
+	background-color:#DFFFFF;
+}

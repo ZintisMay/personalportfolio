@@ -1,0 +1,73 @@
+div{
+	position:fixed;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 6;
+	background-color: #002966;
+	animation-name:fadeOut;
+	animation-duration:2s;
+	animation-timing-function: ease-in;
+	top:-100%;
+}
+h1, h6{
+	display:flex;
+
+	color:white;
+}
+img{
+	/*top:10%;*/
+	position:fixed;
+	height:100%;
+	width:100%;
+	z-index: 5;
+}
+.right{
+
+}
+.moveLeft,.moveRight{
+	opacity:1;
+
+}
+.moveLeft{
+	animation-name:moveLeft;
+	animation-duration:2s;
+	animation-timing-function: ease-in-out;
+	left:-100%;
+}
+.moveRight{
+	animation-name:moveRight;
+	animation-duration:2s;
+	animation-timing-function: ease-in-out;
+	right:-100%;
+}
+
+@keyframes moveLeft{
+	from{
+		left:0px;
+	}
+	to{
+		left:-100%;
+	}
+}
+
+@keyframes moveRight{
+	from{
+		right:0px;
+	}
+	to{
+		right:-100%;
+	}
+}
+@keyframes fadeOut{
+	from{
+		top:0px;
+		opacity: 1;
+	}
+	to{
+		top:0px;
+		opacity: 0;
+	}
+}
