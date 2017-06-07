@@ -19,17 +19,17 @@ div{
 	position:relative;
 	background-color:#010a1a;
 	border-bottom: 3px black solid;
-	height:50px;
-	color:white;
+	height:56px;
+	color:#4da9ff;
 }
 .smallBreak{
 	display: none;
 }
-@media(max-width:700px){
+/*@media(max-width:700px){*/
 	.smallBreak{
 		display:block;
 	}
-}
+/*}*/
 @media(max-width:500px){
 	.smallDisappear{
 		display:none;

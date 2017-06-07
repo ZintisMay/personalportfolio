@@ -1,6 +1,50 @@
 <div class="ham-div">
-	<div class="ham-line"></div>
-	<div class="ham-line"></div>
-	<div class="ham-line"></div>
-	<!-- <app-nav-hamburger-dropdown></app-nav-hamburger-dropdown> -->
+	<div class="ham-line-container">
+		<div class="ham-line"></div>
+		<div class="ham-line"></div>
+		<div class="ham-line"></div>
+	</div>
+	<div class="dropdownA">
+		<div class="optionMember">
+			<div class="optionPanel">
+				<div class="singleOption">
+				About
+				</div>
+			</div>
+		</div>
+		<div class="optionMember">
+			<div class="optionPanel">
+				<div class="singleOption">
+				Contact
+				</div>
+			</div>
+		</div>
+		<div class="optionMember">
+			<div class="optionPanel">
+				<div class="singleOption">
+				Apps
+				</div>
+			</div>
+			<div class="dropdownB">
+				<a href="#" *ngFor="let item of menuItems">
+					<h4>{{item.name}}</h4>
+					<img src="{{item.img}}">
+				</a>
+			</div>
+		</div>
+		<div class="optionMember">
+			<div class="optionPanel">
+				<div class="singleOption">
+				Games
+				</div>
+			</div>
+			<div class="dropdownB">
+				<a href="#" *ngFor="let item of menuItems">
+					<h4>{{item.name}}</h4>
+					<img src="{{item.img}}">
+				</a>
+			</div>
+		</div>
+
+	</div>
 </div>

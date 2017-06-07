@@ -1,21 +1,126 @@
 .ham-div{
 	height:50px;
 	width:50px;
-	border-radius:10%;
-	border:3px solid black;
-	background-color:#4da9ff;
 	position:absolute;
 	left:50px;
 	top:0px;
+	z-index: 2;
 }
 .ham-line{
+	position:static;
 	height:12%;
 	margin-top:16%;
 	width:80%;
 	margin-left: 10%;
 	border-radius:5px;
 	background-color:white;
+	z-index: 6;
 }
-.ham-div:hover{
-	background-color:#DFFFFF;
+.ham-line-container{
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	border:3px solid white;
+	top:3px;
+	left:0px;
+	height:50px;
+	width:50px;
+	background-color:#4da9ff;
+	z-index:5;
+}
+.dropdownA{
+	position: fixed;
+	top:4px;
+	right:55px;
+	width:60%;
+	display:none;
+/*	background-color:#4da9ff; */
+	height:56px;
+	z-index:2;
+}
+.dropdownB{
+	position:absolute;
+	width:24%;
+	min-width:200px;
+	left:0px;
+	top:53px;
+	background-color:#4da9ff;
+	/*outline: 3px solid white;*/
+	display:none;
+	z-index:1;
+}
+
+.optionMember{
+	position:relative;
+	height:50px;
+	display:flex;
+	color:#010a1a;
+	width:25%;
+	text-align:center;
+	/*border: 3px white solid;*/
+	align-items: center;
+	justify-content: center;
+
+}
+.optionPanel{
+	display:flex;
+	height:100%;
+	width:100%;
+	/*position:absolute;*/
+/*	top:0px;
+	left:0px;*/
+	background-color:#4da9ff; 
+	z-index: 2;
+	align-items: center;
+	justify-content: center;
+	/*border:3px white solid;*/
+}
+.singleOption{
+	display:flex;
+	font-size: 20px;	
+	font-weight:bold;
+	z-index: 3;
+}
+
+.ham-div:hover .dropdownA, .optionMember:hover > .dropdownB{
+	/*display:inline-block;*/
+}
+.ham-div:hover .dropdownA{
+	animation: slideOut .3s linear;
+	display:flex;
+}
+.optionMember:hover > .dropdownB{
+	display:inline-block;
+	animation:slideDown .3s linear;
+}
+
+a{
+	text-decoration: none;
+	width:100%;
+	text-align: center;
+}
+img{
+	width:90%;
+}
+h4{
+	
+	color: #010a1a;
+	margin:0px;
+}
+
+@keyframes slideOut{
+	from{
+		right:-100%;
+	}
+	to{
+		right:55px;
+	}
+}
+@keyframes slideDown{
+	from{
+		top:-500%;
+	}
+	to{
+		top:100%;
+	}
 }

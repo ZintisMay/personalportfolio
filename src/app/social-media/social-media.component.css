@@ -2,7 +2,7 @@
 	height:50px;
 }
 .socialMediaContainer{
-	position:fixed;
+	position:relative;
 	bottom:0px;
 	left:0px;
 }
