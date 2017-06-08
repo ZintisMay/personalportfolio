@@ -1,0 +1,26 @@
+.white{
+	color:white;
+}
+carousel{
+	display:flex;
+	position:absolute;
+	width:50%;
+	top:100px;
+	min-width:500px;
+}
+img{
+	max-width:100%;
+}
+@media(max-width:500px){
+	carousel{
+		width:100%;
+		min-width:0px;
+	}
+}
+.flexCon{
+	width:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+
+}

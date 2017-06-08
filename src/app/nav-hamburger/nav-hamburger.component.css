@@ -13,29 +13,28 @@
 	width:80%;
 	margin-left: 10%;
 	border-radius:5px;
-	background-color:white;
+	background-color:#4da9ff;
 	z-index: 6;
 }
 .ham-line-container{
 	margin:0px;
 	padding:0px;
 	position:absolute;
-	border:3px solid white;
+	border:3px solid #4da9ff;
 	top:3px;
 	left:0px;
 	height:50px;
 	width:50px;
-	background-color:#4da9ff;
+	background-color:#002966;
 	z-index:5;
 }
 .dropdownA{
 	position: fixed;
-	top:4px;
+	top:0px;
 	right:55px;
 	width:60%;
 	display:none;
-/*	background-color:#4da9ff; */
-	height:56px;
+	height:62px;
 	z-index:2;
 }
 .dropdownB{
@@ -45,19 +44,17 @@
 	left:0px;
 	top:53px;
 	background-color:#4da9ff;
-	/*outline: 3px solid white;*/
 	display:none;
 	z-index:1;
 }
 
 .optionMember{
 	position:relative;
-	height:50px;
+	height:56px;
 	display:flex;
 	color:#010a1a;
 	width:25%;
 	text-align:center;
-	/*border: 3px white solid;*/
 	align-items: center;
 	justify-content: center;
 
@@ -66,14 +63,10 @@
 	display:flex;
 	height:100%;
 	width:100%;
-	/*position:absolute;*/
-/*	top:0px;
-	left:0px;*/
 	background-color:#4da9ff; 
 	z-index: 2;
 	align-items: center;
 	justify-content: center;
-	/*border:3px white solid;*/
 }
 .singleOption{
 	display:flex;
