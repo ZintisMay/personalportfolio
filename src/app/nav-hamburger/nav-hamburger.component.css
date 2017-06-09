@@ -107,6 +107,7 @@ a{
 	text-decoration: none;
 	width:100%;
 	text-align: center;
+	position: relative;
 }
 .menuIcons{
 	height:60px;
@@ -127,10 +128,10 @@ h4{
 }
 @keyframes slideDown{
 	from{
-		top:-500%;
+		top:-100%;
 	}
 	to{
-		top:75px;
+		top:78px;
 	}
 }
 
@@ -160,4 +161,39 @@ h4{
 	100%{
 		opacity:1;
 	}
+}
+.imgPanels{
+	width:90%;
+
+	margin:0% 5% 5% 5%;
+}
+.imageTag{
+	/*outline:1px solid black;*/
+	background-color: darkgray;
+	width:90%;
+	margin-left:5%;
+	margin-bottom: 0px;
+	padding:0px;
+
+	color:black;
+
+	text-align: center;
+	height:5%;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f3f3f+0,b7b7b7+41,ffffff+52,b7b7b7+65,3f3f3f+100 */
+	background: #3f3f3f; /* Old browsers */
+	background: -moz-linear-gradient(left,  #3f3f3f 0%, #b7b7b7 41%, #ffffff 52%, #b7b7b7 65%, #3f3f3f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #3f3f3f 0%,#b7b7b7 41%,#ffffff 52%,#b7b7b7 65%,#3f3f3f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #3f3f3f 0%,#b7b7b7 41%,#ffffff 52%,#b7b7b7 65%,#3f3f3f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#3f3f3f',GradientType=0 ); /* IE6-9 */
+
+
+}
+.appGameContainer{
+	margin-top: 5%;
+	margin-bottom: 0%;
+	width:50%;
+	height:105%;
+	float:left;
+	position:relative;
 }

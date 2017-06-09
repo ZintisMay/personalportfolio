@@ -23,8 +23,11 @@
 			</div>
 			<div class="dropdownB">
 				<a href="#" *ngFor="let app of apps">
-					<h4>{{app.name}}</h4>
-					<img src="{{app.titleImgage}}">
+					<!-- <h4>{{app.name}}</h4> -->
+					<div class="appGameContainer">
+						<p class="imageTag">{{app.name}}</p>
+						<img class="imgPanels" src="{{app.titleImage}}" >
+					</div>
 				</a>
 			</div>
 		</div>
@@ -34,8 +37,11 @@
 			</div>
 			<div class="dropdownB">
 				<a href="#" *ngFor="let game of games">
-					<h4>{{game.name}}</h4>
-					<img src="{{game.titleImgage}}">
+					<!-- <h4>{{game.name}}</h4> -->
+					<div class="appGameContainer">
+						<p class="imageTag">{{game.name}}</p>
+						<img class="imgPanels" src="{{game.titleImage}}" >
+					</div>
 				</a>
 			</div>
 		</div>
