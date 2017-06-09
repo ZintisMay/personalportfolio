@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { NavHeaderBarComponent } from './nav-header-bar/nav-header-bar.component';
 import { NavHamburgerComponent } from './nav-hamburger/nav-hamburger.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
-import { NavHamburgerDropdownComponent } from './nav-hamburger-dropdown/nav-hamburger-dropdown.component';
 import { IntroZComponent } from './intro-z/intro-z.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
@@ -20,7 +19,6 @@ import { CarouselModule} from 'ngx-bootstrap';
     NavHeaderBarComponent,
     NavHamburgerComponent,
     SocialMediaComponent,
-    NavHamburgerDropdownComponent,
     IntroZComponent,
     WelcomePageComponent
   ],
@@ -41,4 +39,6 @@ import { CarouselModule} from 'ngx-bootstrap';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

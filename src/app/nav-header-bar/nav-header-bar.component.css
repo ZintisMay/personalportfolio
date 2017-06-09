@@ -8,8 +8,9 @@ h1{
 }
 app-nav-hamburger{
 	position:absolute;
-	right:106px;
+	right:0px;
 	top:-3px;
+	width:75px;
 }
 div{
 	display:flex;
@@ -19,7 +20,7 @@ div{
 	position:relative;
 	background-color:#010a1a;
 	border-bottom: 3px black solid;
-	height:56px;
+	height:100%;
 	color:#4da9ff;
 }
 .smallBreak{

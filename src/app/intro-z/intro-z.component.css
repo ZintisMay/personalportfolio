@@ -1,4 +1,4 @@
-div{
+/*div{
 	position:fixed;
 	height:100%;
 	width:100%;
@@ -11,21 +11,13 @@ div{
 	animation-duration:2s;
 	animation-timing-function: ease-in;
 	top:-100%;
-}
-h1, h6{
-	display:flex;
-
-	color:#4da9ff;
-}
+}*/
 img{
 	/*top:10%;*/
 	position:fixed;
 	height:100%;
 	width:100%;
 	z-index: 8;
-}
-.right{
-
 }
 .moveLeft,.moveRight{
 	opacity:1;
@@ -61,13 +53,30 @@ img{
 		right:-100%;
 	}
 }
+.blueCover{
+	color:white;
+	background-color: #002966;
+
+
+	position:fixed;
+	opacity:0;
+	animation-name: fadeOut;
+	animation-duration:3s;
+	animation-timing-function: ease-in;
+	height:0px;
+	width:0px;
+}
 @keyframes fadeOut{
 	from{
-		top:0px;
+		height:100%;
+		width:100%;
 		opacity: 1;
 	}
+
 	to{
-		top:0px;
+		height:100%;
+		width:100%;
 		opacity: 0;
+
 	}
 }

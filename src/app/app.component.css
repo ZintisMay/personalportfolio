@@ -3,9 +3,9 @@ app-nav-header-bar{
 	top:0px;
 	width:100%;
 	left:0px;
-	height:50px;
+	height:75px;
 	animation-name:fromTop;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-timing-function: ease-in-out;
 }
 app-social-media{
@@ -13,7 +13,7 @@ app-social-media{
 	bottom:0px;
 	left:0px;
 	animation-name:fromLeft;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-timing-function: ease-in-out;
 }
 .appContainmentDiv{
@@ -30,10 +30,10 @@ intro-z{
 
 @keyframes fromTop{
 	0%{
-		top:-70px;
+		top:-75px;
 	}
-	50%{
-		top:-70px;
+	66%{
+		top:-75px;
 	}
 	100%{
 		top:0px
@@ -44,10 +44,12 @@ intro-z{
 	0%{
 		left:-70px;
 	}
-	50%{
+	66%{
 		left:-70px;
 	}
 	100%{
 		left:0px;
 	}
+}
+router-outlet{
 }

@@ -1,47 +1,41 @@
 <div class="ham-div">
 	<div class="ham-line-container">
-		<div class="ham-line"></div>
-		<div class="ham-line"></div>
-		<div class="ham-line"></div>
+		<div class="flexCenter">
+			<div class="ham-line"></div>
+			<div class="ham-line"></div>
+			<div class="ham-line"></div>
+		</div>
 	</div>
 	<div class="dropdownA">
 		<div class="optionMember">
-			<div class="optionPanel">
-				<div class="singleOption">
-				About
-				</div>
+			<div class="optionPanel" data-hover="About">
+				<img class="menuIcons" src="../assets/personIcon.png"/>
 			</div>
 		</div>
 		<div class="optionMember">
-			<div class="optionPanel">
-				<div class="singleOption">
-				Contact
-				</div>
+			<div class="optionPanel" data-hover="Contact">
+				<img class="menuIcons" src="../assets/contactIcon.png"/>
 			</div>
 		</div>
 		<div class="optionMember">
-			<div class="optionPanel">
-				<div class="singleOption">
-				Apps
-				</div>
+			<div class="optionPanel" data-hover="Web Pages">
+				<img class="menuIcons" src="../assets/webpageIcon.png"/>
 			</div>
 			<div class="dropdownB">
-				<a href="#" *ngFor="let item of menuItems">
-					<h4>{{item.name}}</h4>
-					<img src="{{item.img}}">
+				<a href="#" *ngFor="let app of apps">
+					<h4>{{app.name}}</h4>
+					<img src="{{app.titleImgage}}">
 				</a>
 			</div>
 		</div>
 		<div class="optionMember">
-			<div class="optionPanel">
-				<div class="singleOption">
-				Games
-				</div>
+			<div class="optionPanel" data-hover="Games">
+				<img class="menuIcons" src="../assets/gameIcon.png"/>
 			</div>
 			<div class="dropdownB">
-				<a href="#" *ngFor="let item of menuItems">
-					<h4>{{item.name}}</h4>
-					<img src="{{item.img}}">
+				<a href="#" *ngFor="let game of games">
+					<h4>{{game.name}}</h4>
+					<img src="{{game.titleImgage}}">
 				</a>
 			</div>
 		</div>

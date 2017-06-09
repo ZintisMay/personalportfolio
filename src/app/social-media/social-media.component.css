@@ -6,3 +6,30 @@
 	bottom:0px;
 	left:0px;
 }
+a{
+	position: relative;
+}
+a:hover::after{
+	animation-name: slightDelay;
+	animation-duration: .5s;
+	content:attr(data-hover);
+	background-color:#4da9ff;
+	border:black 1px solid;
+	position:absolute;
+	left:100%;
+	top:0px;
+	width:100%;
+	height:;
+	color:#002966;
+	text-align: center;
+	z-index: 200;
+}
+
+@keyframes slightDelay{
+	0%{
+		left:-100%;
+	}
+	100%{
+		left:100%;
+	}
+}

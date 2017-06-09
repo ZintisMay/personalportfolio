@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { ContentDeliveryService } from '../content-delivery.service';
+import {ContentObject,GameObject,AppObject} from '../classes/contentObject';
 @Component({
   selector: 'app-welcome-page',
   templateUrl: './welcome-page.component.html',
-  styleUrls: ['./welcome-page.component.css']
+  styleUrls: ['./welcome-page.component.css'],
+  providers:[ContentDeliveryService]	
 })
 export class WelcomePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private contentDeliveryService: ContentDeliveryService) { }
 
-  ngOnInit() {
+  content: Object[];
+
+  ngOnInit():void {
+  	this.getContent();
+  }
+  getContent():void{
+  	this.contentDeliveryService.getContent().then(content => this.content = content);
+  	console.log("content", this.content);
   }
 
 }

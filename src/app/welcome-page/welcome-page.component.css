@@ -5,22 +5,47 @@ carousel{
 	display:flex;
 	position:absolute;
 	width:50%;
-	top:100px;
-	min-width:500px;
+	top:150px;
+	z-index: -50;
+	min-width:600px;
+	height:425px;
+	color:whitesmoke;
 }
-img{
-	max-width:100%;
+/deep/.carousel.slide{
+	width:100% !important;
 }
-@media(max-width:500px){
+/deep/.carousel-indicators{
+	bottom:1%;
+	right: 1%;
+
+}
+/deep/carousel{
+	color:white;
+}
+img{	
+
+}
+
+@media(max-width:600px){
 	carousel{
 		width:100%;
 		min-width:0px;
 	}
+	img{
+		width:100%;
+	}
 }
 .flexCon{
 	width:100%;
+	height:100%;
 	display:flex;
 	align-items: center;
 	justify-content: center;
-
+	position: relative;
+}
+.imageText{
+	position:absolute;
+	bottom:5px;
+	left:5px;
+	margin:10px;
 }
