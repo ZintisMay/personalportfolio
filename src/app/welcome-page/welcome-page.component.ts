@@ -17,8 +17,7 @@ export class WelcomePageComponent implements OnInit {
   	this.getContent();
   }
   getContent():void{
-  	this.contentDeliveryService.getContent().then(content => this.content = content);
-  	console.log("content", this.content);
+  	this.contentDeliveryService.getContent().then(content => this.content = content);   
   }
 
 }

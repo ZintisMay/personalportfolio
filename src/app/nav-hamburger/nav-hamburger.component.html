@@ -22,7 +22,7 @@
 				<img class="menuIcons" src="../assets/webpageIcon.png"/>
 			</div>
 			<div class="dropdownB">
-				<a href="#" *ngFor="let app of apps">
+				<a routerLink="/app/{{app.name}}" *ngFor="let app of apps">
 					<!-- <h4>{{app.name}}</h4> -->
 					<div class="appGameContainer">
 						<p class="imageTag">{{app.name}}</p>
@@ -36,7 +36,7 @@
 				<img class="menuIcons" src="../assets/gameIcon.png"/>
 			</div>
 			<div class="dropdownB">
-				<a href="#" *ngFor="let game of games">
+				<a routerLink="/game/{{game.name}}" *ngFor="let game of games">
 					<!-- <h4>{{game.name}}</h4> -->
 					<div class="appGameContainer">
 						<p class="imageTag">{{game.name}}</p>

@@ -5,7 +5,7 @@ app-nav-header-bar{
 	left:0px;
 	height:75px;
 	animation-name:fromTop;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 }
 app-social-media{
@@ -13,14 +13,14 @@ app-social-media{
 	bottom:0px;
 	left:0px;
 	animation-name:fromLeft;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 }
 .appContainmentDiv{
 	width:100%;
 	margin:0px;
 	position:relative;
-	top:-23px;
+	/*top:-23px;*/
 	left:0px;
 	height:100%;
 }
@@ -50,6 +50,4 @@ intro-z{
 	100%{
 		left:0px;
 	}
-}
-router-outlet{
 }

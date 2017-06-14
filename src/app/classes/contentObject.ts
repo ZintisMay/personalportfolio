@@ -1,20 +1,20 @@
 export class ContentObject {
 	name: string;
 	titleImage:string;
-	generalImage:string;
 	blurb:string;
 	description:string;
-
+	type:string;
+	elements:string[];
 	constructor(name:string,
 				titleImage:string,
-				generalImage:string,
 				blurb:string,
-				description:string){
+				description:string,
+				elements: string[]){
 		this.name= name;
 		this.titleImage=titleImage;
-		this.generalImage=generalImage;
 		this.blurb=blurb;
 		this.description=description;
+		this.elements = elements;
 	}
 }
 
@@ -22,6 +22,8 @@ export class GameObject extends ContentObject{
 	playerCount:string;
 	time:string;
 	mechanics:string[];
+	generalImage:string;
+
 	constructor(name:string,
 				titleImage:string,
 				generalImage:string,
@@ -29,12 +31,12 @@ export class GameObject extends ContentObject{
 				description:string,
 				playerCount:string,
 				time:string,
-				mechanics:string[]){
-		super(name, titleImage, generalImage, blurb, description);
+				elements:string[]){
+		super(name, titleImage, blurb, description, elements);
 		this.playerCount = playerCount;
 		this.time = time;
-		this.mechanics = mechanics;
-
+		this.generalImage = generalImage;
+		this.type="Game";
 	}
 }
 
@@ -42,11 +44,12 @@ export class AppObject extends ContentObject{
 	URLstring:string;
 	constructor(name:string,
 				titleImage:string,
-				generalImage:string,
 				blurb:string,
 				description:string,
-				URLstring:string){
-		super(name, titleImage, generalImage, blurb, description);
+				URLstring:string,
+				elements: string[]){
+		super(name, titleImage, blurb, description, elements);
 		this.URLstring = URLstring;
+		this.type="App";
 	}
 }

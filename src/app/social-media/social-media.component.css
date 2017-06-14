@@ -1,10 +1,27 @@
 .socialMedia{
 	height:50px;
+	filter: grayscale(0%);
+
 }
 .socialMediaContainer{
 	position:relative;
 	bottom:0px;
 	left:0px;
+}
+.angularMediaContainer{
+	position: fixed;
+	bottom:5px;
+	right:5px;
+
+}
+.angularMediaContainer>img{
+	height:50px;
+	float:right;
+}
+.angularMediaContainer>p{
+	float:right;
+	color:white;
+	margin-top: 25px;
 }
 a{
 	position: relative;

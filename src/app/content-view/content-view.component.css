@@ -1,0 +1,55 @@
+*{color:white;}
+.mechanicPanel{
+	background-color:lightblue;
+	border-radius: 5px;
+	margin:10px;
+	padding:10px;
+	color:black;
+}
+.contain-content-view{
+	margin-top:75px;
+	display:flex-column;
+	justify-content: center;
+	align-items: center;
+	display:flex;
+}
+.centered-box>*{
+	text-align:center;
+	margin: 15px 0px 15px 0px;
+}
+.centered-box{
+	display:flex-column;
+	max-width:1000px;
+}
+img.titleImageClass{
+	height:100%;
+	width:100%;
+	max-width:1000px;
+	object-fit: contain;
+	display: flex;
+}
+.imageHolder{
+	z-index: 0;
+	max-height:500px;
+	display:flex;
+	position: relative;
+}
+.paragraph{
+	background-color: white;
+	color:#002966;
+	border-radius: 15px;
+	padding:10px;
+}
+p{
+	font-size: 16px;
+	font-weight:bold;
+}
+.finger{
+	position: absolute;
+	height:100px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+    bottom:-25px;
+    left:-25px;
+}

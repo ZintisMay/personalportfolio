@@ -1,6 +1,14 @@
 .white{
 	color:white;
 }
+.flexCon{
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
 carousel{
 	display:flex;
 	position:absolute;
@@ -13,17 +21,39 @@ carousel{
 }
 /deep/.carousel.slide{
 	width:100% !important;
+
 }
 /deep/.carousel-indicators{
-	bottom:1%;
-	right: 1%;
-
+	top:0%;
+	height:15px;
+}
+/deep/.carousel-inner{
+	top:20px;
 }
 /deep/carousel{
 	color:white;
 }
+/deep/span.icon-prev, /deep/span.icon-next{
+	color:black;
+	text-shadow: 0 1px 3px white;
+	background-color: white;
+	border-radius: 50%;
+	position:relative;
+		border:2px solid black;
+}
+/deep/span.icon-prev::before, /deep/span.icon-next::before{
+	bottom:2px;
+	position: absolute;
+	right:9px;
+}
+/deep/span.icon-next::before{
+	right:7px;
+}
+/deep/span.icon-prev::before{
+	left:7px;
+}
 img{	
-
+	border-radius: 15px;
 }
 
 @media(max-width:600px){
@@ -35,17 +65,16 @@ img{
 		width:100%;
 	}
 }
-.flexCon{
-	width:100%;
-	height:100%;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-}
+
 .imageText{
-	position:absolute;
-	bottom:5px;
-	left:5px;
-	margin:10px;
+
+	width:100%;
+}
+.imageText>*{
+		width:100%;
+		text-align: center;
+}
+.urlLink{
+	height:100%;
+	width:100%;
 }

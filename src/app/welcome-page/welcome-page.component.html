@@ -1,8 +1,10 @@
 <div class="flexCon">
-	<carousel [interval]="5000">
+	<carousel [interval]="20000">
 	  <slide *ngFor="let slide of content">
-	    <img width="100%" height="100%" src="{{slide.titleImage}}">
-	    <div clas="imageText">
+	  	<a class="urlLink" routerLink="/{{slide.type}}/{{slide.name}}">
+	  		<img width="100%" height="100%" src="{{slide.titleImage}}">
+	  	</a>	    
+	    <div class="imageText">
 		    <h3>{{slide.name}}</h3>
 		    <p>{{slide.blurb}}</p>
 	    </div>

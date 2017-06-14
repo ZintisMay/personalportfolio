@@ -25,31 +25,37 @@ img{
 }
 .moveLeft{
 	animation-name:moveLeft;
-	animation-duration:3s;
+	animation-duration:1s;
 	animation-timing-function: ease-in-out;
 	left:-100%;
 }
 .moveRight{
 	animation-name:moveRight;
-	animation-duration:3s;
+	animation-duration:1s;
 	animation-timing-function: ease-in-out;
 	right:-100%;
 }
 
 @keyframes moveLeft{
-	from{
+	0%{
 		left:0px;
 	}
-	to{
+	25%{
+		left:0px;
+	}
+	100%{
 		left:-100%;
 	}
 }
 
 @keyframes moveRight{
-	from{
+	0%{
 		right:0px;
 	}
-	to{
+	25%{
+		right:0px;
+	}
+	100%{
 		right:-100%;
 	}
 }
@@ -61,7 +67,7 @@ img{
 	position:fixed;
 	opacity:0;
 	animation-name: fadeOut;
-	animation-duration:3s;
+	animation-duration:1s;
 	animation-timing-function: ease-in;
 	height:0px;
 	width:0px;

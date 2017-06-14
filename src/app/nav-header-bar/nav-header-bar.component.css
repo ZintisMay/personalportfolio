@@ -3,14 +3,16 @@ h1{
 	position:absolute;
 	left:0px;
 	top:0px;
-	margin-top:7px;
-	margin-left:7px;
+	margin-top:16px;
+	margin-left:16px;
+	color:#a6d4ff;
 }
 app-nav-hamburger{
 	position:absolute;
 	right:0px;
 	top:-3px;
 	width:75px;
+	z-index: 100;
 }
 div{
 	display:flex;

@@ -12,6 +12,7 @@ import { IntroZComponent } from './intro-z/intro-z.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 import { CarouselModule} from 'ngx-bootstrap';
+import { ContentViewComponent } from './content-view/content-view.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CarouselModule} from 'ngx-bootstrap';
     NavHamburgerComponent,
     SocialMediaComponent,
     IntroZComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    ContentViewComponent
   ],
   imports: [
     CarouselModule.forRoot(),
@@ -30,7 +32,13 @@ import { CarouselModule} from 'ngx-bootstrap';
       },
       {
        path: '', redirectTo: '/welcome', pathMatch: 'full'
-      }       
+      },   
+      {
+       path: 'app/:name', component: ContentViewComponent
+      },
+      {
+       path: 'game/:name', component: ContentViewComponent
+      }          
     ]),
     BrowserModule,
     FormsModule,
