@@ -1,0 +1,187 @@
+.ham-div{
+	height:75px;
+	width:75px;
+	position:absolute;
+	top:3px;
+	z-index: 2;
+	padding:0px;
+}
+.ham-line-container{
+	padding:0px;
+	position:absolute;
+	border:3px solid #4da9ff;
+	height:100%;
+	width:100%;
+	z-index:44;
+	background-color:#002966;
+	justify-content: center;
+	align-items: center;
+}
+.ham-line{
+	display:flex;
+	flex-direction: column;
+	height:12%;
+	margin-top:16%;
+	width:80%;
+	margin-left:10%;
+	background-color:#4da9ff;
+	z-index: 45;
+}
+
+.flexCenter{
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.dropdownA{
+	position: fixed;
+	top:0px;
+	right:75px;
+	width:360px;
+	display:none;
+	height:75px;
+	z-index:41;
+}
+.dropdownB{
+	position:fixed;
+	width:435px;
+	right:0px;
+	top:75px;
+	background-color:#4da9ff;
+	display:none;
+	z-index:5;
+}
+
+.optionMember{
+	position:relative;
+	height:100%;
+	display:flex;
+	color:#010a1a;
+	width:25%;
+	text-align:center;
+	align-items: center;
+	justify-content: center;
+	z-index: 50;
+
+}
+.optionPanel{
+	display:flex;
+	height:100%;
+	width:100%;
+	background-color:#4da9ff; 
+	z-index: 2;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 51;
+}
+.singleOption{
+	display:flex;
+	font-size: 20px;	
+	font-weight:bold;
+	z-index: 3;
+}
+@media(max-width: 500px){
+	.singleOption{
+		font-size: 16px;
+	}
+}
+@media(max-width: 360px){
+	.singleOption{
+		font-size: 12px;
+	}
+}
+.ham-div:hover .dropdownA{
+	animation: slideOut .3s linear;
+	display:flex;
+}
+.optionMember:hover > .dropdownB{
+	display:inline-block;
+	animation:slideLeft .3s linear;
+}
+
+a{
+	text-decoration: none;
+	width:100%;
+	text-align: center;
+	position: relative;
+}
+.menuIcons{
+	height:60px;
+}
+h4{
+	
+	color: #010a1a;
+	margin:0px;
+}
+
+@keyframes slideOut{
+	from{
+		right:-100%;
+	}
+	to{
+		right:55px;
+	}
+}
+@keyframes slideLeft{
+	from{
+		right:-100%;
+	}
+	to{
+		right:0px;
+	}
+}
+
+/*.optionPanel:hover::after{
+	animation-name: slightDelay;
+	animation-duration: .5s;
+	content:attr(data-hover);
+	background-color:#4da9ff;
+	border:black 1px solid;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	color:#002966;
+	text-align: center;
+	z-index: 200;
+	opacity:1;
+}*/
+
+@keyframes slightDelay{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+.imgPanels{
+	width:90%;
+
+	margin:0% 5% 5% 5%;
+}
+.imageTag{
+	background-color: #002966;
+	width:90%;
+	margin-left:5%;
+	margin-bottom: 0px;
+	padding:0px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color:white;
+	text-align: center;
+	height:5%;
+}
+.appGameContainer{
+	margin-top: 5%;
+	margin-bottom: 0%;
+	width:50%;
+	height:105%;
+	float:left;
+	position:relative;
+}

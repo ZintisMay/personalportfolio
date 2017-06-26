@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row firstRow">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8">
+			<h1>Contact Me:</h1>
+			<h4>For work inquiries, web development, game design, questions, comments, or really anything at all. Most reliably through email, although twitter is a good second.</h4>
+		</div>
+		<div class="col-xs-2"></div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6 customPanel" *ngFor="let site of contactResources">
+			<h3>{{site.name}}</h3>
+			<h5>{{site.shortURL}}</h5>
+			<a href="{{site.URL}}" class="imgHolder">
+				<img src="{{site.image}}">
+			</a>
+		</div>
+	</div>
+</div>

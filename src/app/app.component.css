@@ -1,0 +1,45 @@
+app-nav-header-bar{
+	position: fixed;
+	top:0px;
+	width:100%;
+	left:0px;
+	height:75px;
+	animation-name:fromTop;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	z-index: 100;
+}
+app-social-media{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	z-index: 100;
+}
+.appContainmentDiv{
+
+	width:100%;
+	margin:0px;
+	margin-top:75px;
+	position:relative;
+	left:0px;
+	height:100%;
+	/*overflow-y: scroll;*/
+}
+intro-z{
+	z-index:120;
+}
+@keyframes fromTop{
+	0%{
+		top:-75px;
+	}
+	66%{
+		top:-75px;
+	}
+	100%{
+		top:0px
+	}
+}
+
+/deep/content-view{
+	z-index: 0;
+}

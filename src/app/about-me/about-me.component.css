@@ -1,0 +1,12 @@
+.container{
+	/*margin-top: 100px;*/
+	color:white;
+}
+.content{
+	text-align:center;
+}
+img{
+	width: 100%;
+	height:auto;
+	border-radius: 15px;
+}

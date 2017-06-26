@@ -1,0 +1,65 @@
+.container{
+	margin-top: 100px;
+	text-align: center;
+	color:white;
+}
+carousel{
+	display:flex;
+
+	width:100%;
+
+	z-index: -50;
+	min-width:600px;
+	height:425px;
+	color:whitesmoke;
+}
+
+/deep/.carousel-indicators{
+	top:0%;
+	height:15px;
+}
+/deep/.carousel-inner{
+	top:20px;
+}
+/deep/carousel{
+	color:white;
+}
+/deep/span.icon-prev, /deep/span.icon-next{
+	color:black;
+	text-shadow: 0 1px 3px white;
+	background-color: white;
+	border-radius: 50%;
+	position:relative;
+		border:2px solid black;
+}
+/deep/span.icon-prev::before, /deep/span.icon-next::before{
+	bottom:2px;
+	position: absolute;
+	right:9px;
+}
+/deep/span.icon-next::before{
+	right:7px;
+}
+/deep/span.icon-prev::before{
+	left:7px;
+}
+/deep/.carousel-control{
+	height:100%;
+}
+img{	
+	border-radius: 15px;
+}
+
+
+.imageText{
+
+	width:100%;
+}
+.imageText>*{
+		width:100%;
+		text-align: center;
+}
+.urlLink{
+	height:100%;
+	width:100%;
+}

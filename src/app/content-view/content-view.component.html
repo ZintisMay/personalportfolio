@@ -1,0 +1,32 @@
+	
+	<div class="contain-content-view">
+<!-- 		<ng-container *ngIf="pageContent.URLstring">
+			<a  href="{{pageContent.URLstring}}">
+			asdf
+			</a>
+		</ng-container> -->
+		<div class="centered-box">
+
+
+			<h1 >{{pageContent.name}}</h1>
+			<p >{{pageContent.blurb}}</p>
+			<p class="holdingSpans">
+				<a *ngFor="let mech of pageContent.elements" href="http://www.google.com/search?q={{mech}}" target="_blank">
+					<span class="mechanicPanel" >
+						{{mech}}
+					</span>
+				</a>
+			</p>
+			<p class="paragraph">{{pageContent.description}}</p>
+
+				<div class="imageHolder">
+					<a *ngIf="pageContent.URLstring" href="{{pageContent.URLstring}}" target="_blank"></a>
+					<img src="{{pageContent.generalImage || pageContent.titleImage}}" class="titleImageClass">
+					
+					<img class="finger" src="./assets/click.png" *ngIf="pageContent.URLstring">
+				</div>	
+
+		</div>
+	</div>
+
+

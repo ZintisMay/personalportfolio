@@ -1,0 +1,54 @@
+<div class="ham-div">
+	<div class="ham-line-container">
+		<div class="flexCenter">
+			<div class="ham-line"></div>
+			<div class="ham-line"></div>
+			<div class="ham-line"></div>
+		</div>
+	</div>
+	<div class="dropdownA">
+	
+		<a class="optionMember" routerLink="/about-me">
+			<div class="optionPanel" data-hover="About">
+				<img class="menuIcons" src="../assets/personIcon.png"/>
+			</div>
+		</a>
+
+		<a class="optionMember" routerLink="/contact-me">
+			<div class="optionPanel" data-hover="Contact">
+				<img class="menuIcons" src="../assets/contactIcon.png"/>
+			</div>
+		</a>
+
+		<div class="optionMember">
+			<div class="optionPanel" data-hover="Web Pages">
+				<img class="menuIcons" src="../assets/webpageIcon.png"/>
+			</div>
+			<div class="dropdownB">
+				<a routerLink="/app/{{app.name}}" *ngFor="let app of apps">
+					<!-- <h4>{{app.name}}</h4> -->
+					<div class="appGameContainer">
+						<p class="imageTag">{{app.name}}</p>
+						<img class="imgPanels" src="{{app.titleImage}}" >
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="optionMember">
+			<div class="optionPanel" data-hover="Games">
+				<img class="menuIcons" src="../assets/gameIcon.png"/>
+			</div>
+			<div class="dropdownB">
+				<a routerLink="/game/{{game.name}}" *ngFor="let game of games">
+					<!-- <h4>{{game.name}}</h4> -->
+					<div class="appGameContainer">
+						<p class="imageTag">{{game.name}}</p>
+						<img class="imgPanels" src="{{game.titleImage}}" >
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</div>
+</div>

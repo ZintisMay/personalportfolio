@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+	margin:0px;
+	position:fixed;
+	width:100%;
+	margin-top:0px;
+	height:100%;
+	background-color: #002966;
+}
+/**{outline-color:whitesmoke;outline-width:2px;outline-style: dotted;}*/
+
+
+/*dark blue #002966
+light blue #4da9ff
+medium blue #010a1a*/
