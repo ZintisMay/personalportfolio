@@ -6,6 +6,10 @@ import {ContentDeliveryService} from '../content-delivery.service';
 
 import 'rxjs/add/operator/switchMap';
 
+import {ContentObject} from '../classes/contentObject';
+import {GameObject} from '../classes/contentObject';
+import {AppObject} from '../classes/contentObject';
+import {AppGameContentObject} from '../classes/contentObject';
 
 @Component({
   selector: 'app-content-view',
@@ -13,18 +17,27 @@ import 'rxjs/add/operator/switchMap';
   styleUrls: ['./content-view.component.css']
 })
 export class ContentViewComponent implements OnInit {
-  pageContent: Object;
+  pageContent: AppGameContentObject;
 
   constructor(  	
   	private contentDeliveryService: ContentDeliveryService,
   	private route: ActivatedRoute,
-  	private location: Location) {}
+  	private location: Location) {
+    this.pageContent = new AppGameContentObject("","","","","","","","",[]);
+  }
 
   ngOnInit(): void {
-  	// QQQ
+
+    function logger(x){
+      console.log(x);
+      return x;
+    }
+
   	this.route.params
-    .switchMap((params: Params) => this.contentDeliveryService.getItem(params['name']))
-    .subscribe(returnContent => this.pageContent = returnContent);
+    .switchMap((params: Params) => 
+      this.contentDeliveryService
+      .getItem(params['type'], params['name']))
+    .subscribe(returnContent => this.pageContent = logger(returnContent));
   }
 
 }

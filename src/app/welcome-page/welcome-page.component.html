@@ -1,13 +1,22 @@
-<div class="flexCon">
-	<carousel [interval]="20000">
-	  <slide *ngFor="let slide of content">
-	  	<a class="urlLink" routerLink="/{{slide.type}}/{{slide.name}}">
-	  		<img width="100%" height="100%" src="{{slide.titleImage}}">
-	  	</a>	    
-	    <div class="imageText">
-		    <h3>{{slide.name}}</h3>
-		    <p>{{slide.blurb}}</p>
-	    </div>
-	  </slide>	
-	</carousel>
+<!-- <div class="flexCon"> -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-xs-12 col-lg-8">
+			<h3>Programming by day<br>Designing by night<br>Here's what I've been working on:</h3>
+			<br>
+			<carousel [interval]="5000">
+			  <slide *ngFor="let slide of content">
+			  	<a class="urlLink" routerLink="/{{slide.type}}/{{slide.name}}">
+			  		<img width="100%" height="100%" src="{{slide.titleImage}}">
+			  	</a>	    
+			    <div class="imageText">
+				    <h3>{{slide.name}}</h3>
+				    <p>{{slide.blurb}}</p>
+			    </div>
+			  </slide>	
+			</carousel>
+		</div>	
+		<div class="col-lg-2"></div>
+	</div>
 </div>

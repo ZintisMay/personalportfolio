@@ -7,27 +7,27 @@ app-nav-header-bar{
 	animation-name:fromTop;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
+	z-index: 100;
 }
 app-social-media{
 	position:fixed;
 	bottom:0px;
 	left:0px;
-	animation-name:fromLeft;
-	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
+	z-index: 100;
 }
 .appContainmentDiv{
+
 	width:100%;
 	margin:0px;
+	margin-top:75px;
 	position:relative;
-	/*top:-23px;*/
 	left:0px;
 	height:100%;
+	/*overflow-y: scroll;*/
 }
 intro-z{
 	z-index:120;
 }
-
 @keyframes fromTop{
 	0%{
 		top:-75px;
@@ -40,14 +40,6 @@ intro-z{
 	}
 }
 
-@keyframes fromLeft{
-	0%{
-		left:-70px;
-	}
-	66%{
-		left:-70px;
-	}
-	100%{
-		left:0px;
-	}
+/deep/content-view{
+	z-index: 0;
 }

@@ -1,19 +1,4 @@
-/*div{
-	position:fixed;
-	height:100%;
-	width:100%;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 6;
-	background-color: #002966;
-	animation-name:fadeOut;
-	animation-duration:2s;
-	animation-timing-function: ease-in;
-	top:-100%;
-}*/
 img{
-	/*top:10%;*/
 	position:fixed;
 	height:100%;
 	width:100%;
@@ -59,30 +44,34 @@ img{
 		right:-100%;
 	}
 }
+
 .blueCover{
-	color:white;
+
 	background-color: #002966;
-
-
 	position:fixed;
-	opacity:0;
-	animation-name: fadeOut;
-	animation-duration:1s;
-	animation-timing-function: ease-in;
+
+	bottom:0px;
+	right:0px;
 	height:0px;
 	width:0px;
+	z-index: 7;
+	animation: fadeAndShrink 1s ease-in;
 }
-@keyframes fadeOut{
-	from{
-		height:100%;
-		width:100%;
+
+@keyframes fadeAndShrink{
+	0%{
 		opacity: 1;
-	}
-
-	to{
 		height:100%;
 		width:100%;
+    }
+	50%{
+		opacity: 1;
+		height:100%;
+		width:100%;
+    }
+	100%{
 		opacity: 0;
-
-	}
+		height:100%;
+		width:100%;
+	}	
 }

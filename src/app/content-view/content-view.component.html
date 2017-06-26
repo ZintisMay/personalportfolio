@@ -10,7 +10,7 @@
 
 			<h1 >{{pageContent.name}}</h1>
 			<p >{{pageContent.blurb}}</p>
-			<p>
+			<p class="holdingSpans">
 				<a *ngFor="let mech of pageContent.elements" href="http://www.google.com/search?q={{mech}}" target="_blank">
 					<span class="mechanicPanel" >
 						{{mech}}
@@ -19,13 +19,12 @@
 			</p>
 			<p class="paragraph">{{pageContent.description}}</p>
 
-			<div class="imageHolder">
-				<img src="{{pageContent.generalImage || pageContent.titleImage}}" class="titleImageClass">
-				<img class="finger" src="./assets/click.png" *ngIf="pageContent.URLstring">
-			</div>
-			<!-- 		<ng-container *ngIf="pageContent.mechanics">
-				<div *ngFor="let panel of pageContent.mechanics">{{panel}}</div>
-			</ng-container> -->			
+				<div class="imageHolder">
+					<a *ngIf="pageContent.URLstring" href="{{pageContent.URLstring}}" target="_blank"></a>
+					<img src="{{pageContent.generalImage || pageContent.titleImage}}" class="titleImageClass">
+					
+					<img class="finger" src="./assets/click.png" *ngIf="pageContent.URLstring">
+				</div>	
 
 		</div>
 	</div>

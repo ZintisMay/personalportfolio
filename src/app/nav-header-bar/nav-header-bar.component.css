@@ -1,12 +1,15 @@
 h1{
 	display:flex;
 	position:absolute;
-	left:0px;
+	left:30px;
 	top:0px;
-	margin-top:16px;
-	margin-left:16px;
 	color:#a6d4ff;
+	font-family: times;
+	height:75px;
+	margin-top: 0px;
+	font-size: 60px;
 }
+
 app-nav-hamburger{
 	position:absolute;
 	right:0px;
@@ -26,18 +29,43 @@ div{
 	color:#4da9ff;
 }
 .smallBreak{
-	display: none;
+
+	display:block;
 }
-/*@media(max-width:700px){*/
-	.smallBreak{
-		display:block;
-	}
-/*}*/
-@media(max-width:500px){
+
+.smallDisappear{
+	animation: .5s fadeIn;
+	
+}
+@media(max-width:830px){
 	.smallDisappear{
-		display:none;
+		animation: .5s fadeOut;
+		opacity:0;
 	}
 }
 /*.titleName{
 	display:flex;
 }*/
+h3{
+
+	font-family: times;
+}
+
+@keyframes fadeOut{
+	from{
+		opacity:1;
+
+	}
+	to{
+		opacity:0;
+	}
+}
+@keyframes fadeIn{
+	from{
+		opacity:0;
+
+	}
+	to{
+		opacity:1;
+	}
+}

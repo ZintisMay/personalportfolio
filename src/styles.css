@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-body{margin:0px;position:relative;}
+body{
+	margin:0px;
+	position:fixed;
+	width:100%;
+	margin-top:0px;
+	height:100%;
+	background-color: #002966;
+}
 /**{outline-color:whitesmoke;outline-width:2px;outline-style: dotted;}*/
 
 
