@@ -12,6 +12,7 @@ import { IntroZComponent } from './intro-z/intro-z.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 import { CarouselModule} from 'ngx-bootstrap';
+
 import { ContentViewComponent } from './content-view/content-view.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { AboutMeComponent } from './about-me/about-me.component';

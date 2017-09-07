@@ -57,7 +57,15 @@ export class AppObject extends ContentObject{
 export class AppGameContentObject extends GameObject{
 
 	URLstring: string;
-	constructor(name:string, titleImage:string, generalImage:string,blurb:string,description:string,playerCount:string,time:string,URLstring:string,elements:string[],){
+	constructor(name:string, 
+		titleImage:string, 
+		generalImage:string,
+		blurb:string,
+		description:string,
+		playerCount:string,
+		time:string,
+		URLstring:string,
+		elements:string[],){
 		super(name,titleImage,generalImage,blurb,description,playerCount,time,elements);
 		this.URLstring = URLstring;
 		this.type="";

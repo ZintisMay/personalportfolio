@@ -13,7 +13,7 @@ export const ApplicationObjectArray: AppObject[] = [
 	new AppObject(
 		"Word Wars!",
 		"./assets/wordwars.png",
-		"An online typing game!.",
+		"An online typing game!",
 		"This is a typing game created by myself and a small team of web developent students. It features a library of words from the Wordnik API, high scores stored in MySql, fun graphic and sound design. We used Firebase for user authentication, dynamic room creation, a chat service, and multiplayer interaction. We are very proud of our product created in just a few weeks, and intend to continue working on it by adding features in the future.",
 		"http://wordwarsapp.herokuapp.com",
 		["Firebase", "MySql", "CSS animate", "Firebase Authentication", "Node", "Express", "Sequelize", "Handlebars", "Wordnik API"]
